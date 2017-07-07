@@ -8,9 +8,10 @@ public class Item : MonoBehaviour {
     [SerializeField] string description;
 
     [SerializeField] Icon icon;
-    [SerializeField] ItemType itemType;
+    [SerializeField] ItemTypes itemType;
 
     //effects / buffs
+
 
     public string Name
     {
@@ -24,13 +25,13 @@ public class Item : MonoBehaviour {
         set { description = value; }
     }
 
-    public Icon ThumbNail
+    public Icon Thumbnail
     {
         get { return icon; }
         set { icon = value; }
     }
 
-    public ItemType TypeOfItem
+    public ItemTypes TypeOfItem
     {
         get { return itemType; }
     }

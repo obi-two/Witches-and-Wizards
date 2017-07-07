@@ -13,7 +13,7 @@ public class Icon {
 
     public string ToolTip
     {
-        get {return toolTip;}
+        get { return toolTip; }
         set { toolTip = value; }
     }
 }

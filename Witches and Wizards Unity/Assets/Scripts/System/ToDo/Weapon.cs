@@ -1,5 +1,5 @@
 ﻿[System.Serializable]
 public class Weapon : Item {
-    //enum for Weapon (main hand offhand
-    //set the itemtype to be Weapon as it is created
+    //enum for weapon spot (main hand / offhand
+    //set the itemtype to be WEAPON it is created
 }

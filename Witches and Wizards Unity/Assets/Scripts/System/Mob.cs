@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-
 using System.Collections.Generic;
 
 [System.Serializable]
@@ -19,44 +18,51 @@ public class Mob : MonoBehaviour {
         set { mobName = value; }
     }
 
+
     public int CurrentHealth
     {
         get { return curHealth; }
         set {
             if (value < 0)
                 curHealth = 0;
-            else if (curHealth > maxHealth)
+            else if (value > maxHealth)
                 curHealth = maxHealth;
             else
                 curHealth = value;
-        }
+            }
     }
 
     public int MaxHealth
     {
         get { return maxHealth; }
-        set {
+        set
+        {
             if (value < 1)
                 maxHealth = 1;
-            else maxHealth = value;
+            else
+                maxHealth = value;
         }
     }
+
 
     public int Level
     {
         get { return level; }
-        set {
+        set
+        {
             if (value < 0)
                 level = 0;
             else
                 level = value;
-            }
+        }
     }
+
 
     public void LevelUp()
     {
         level++;
     }
+
 
     public Icon ThumbNail
     {
@@ -64,18 +70,19 @@ public class Mob : MonoBehaviour {
         set { icon = value; }
     }
 
+
     public List<Buff> Buffs
     {
         get { return buffs; }
         set { buffs = value; }
     }
 
+
     public void AddBuff(Buff b)
     {
         buffs.Add(b);
     }
 
+
     //remove buff/buffs
-
-
 }

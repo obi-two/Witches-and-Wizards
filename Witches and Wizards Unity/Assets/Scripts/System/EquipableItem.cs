@@ -1,8 +1,5 @@
 ﻿using UnityEngine;
 
-[System.Serializable]
-public class EquipableItem : MonoBehaviour {
-    //tool tip replacment that compares its stats with what you have equiped
-    [SerializeField] string ToolTipOverride;
-    
+public class EquipableItem : Item {
+    [SerializeField] string ToolTipOverride;    //replaces the tooltip for the icon
 }
